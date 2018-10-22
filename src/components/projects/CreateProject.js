@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { createProject } from '../../store/actions/projectActions'
 
 export class CreateProject extends Component {
     state = {
