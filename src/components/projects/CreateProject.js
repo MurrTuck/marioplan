@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { createProject } from '../../store/actions/projectActions'
 
-export class CreateProject extends Component {
+class CreateProject extends Component {
     state = {
         title: '',
         content: ''
@@ -23,15 +23,15 @@ export class CreateProject extends Component {
     render() {
         return (
             <div className="container">
-                <form onSubmit={this.handleSubmit} className="white">
-                    <h5 className="grey-text text-darken-3">Project Creation</h5>
+                <form className="white" onSubmit={this.handleSubmit}>
+                    <h5 className="grey-text text-darken-3">Create a New Project</h5>
                     <div className="input-field">
-                        <label htmlFor="title">Title</label>
                         <input type="text" id="title" onChange={this.handleChange} />
+                        <label htmlFor="title">Title</label>
                     </div>
                     <div className="input-field">
-                        <label htmlFor="content">Create New Project</label>
                         <textarea id="content" className="materialize-textarea" onChange={this.handleChange}></textarea>
+                        <label htmlFor="content">Create New Project</label>
                     </div>
                     <div className="input-field">
                         <button className="btn blue lighten-1 z-depth-0">CREATE</button>
