@@ -4,7 +4,7 @@ import 'firebase/auth';
 
 // Initialize Firebase
 var config = {
-    apiKey: "AIzaSyAt1SvhZpJA2TCDFcVFZtrtq2F1MNskvXc",
+    apiKey: 'AIzaSyAt1SvhZpJA2TCDFcVFZtrtq2F1MNskvXc',
     authDomain: "marioplan-go.firebaseapp.com",
     databaseURL: "https://marioplan-go.firebaseio.com",
     projectId: "marioplan-go",
